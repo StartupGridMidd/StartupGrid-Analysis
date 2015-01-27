@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    <meta charset="utf-8">
+    <title>StartupGrid Analytics</title>
+    <link rel="stylesheet" href="dist/css/home.css">
+  </head>
+  <body>
+    <div id="container"></div>
+      <ul>
+        <li> "hello"></li>
+        <li> "world"</li>
+      </ul>
+
+    <script src="dist/js/main.js"></script>
+
+
+    <script id="template-home" type="text/x-mustache">
+      <div class="container">
+        <div class="topics">
+          {{#topics}}
+          <div class="topic-bullet" data-id="{{id}}">
+            {{name}}
+          </div>
+        {{/topics}}
+        </div>
+      </div>
+    </script>
+
+  </body>
+</html>
